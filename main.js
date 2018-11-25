@@ -28,8 +28,8 @@ app.on('activate', () => {
   }
 });
 
+// dialog is created here
 ipcMain.on('getFile', (event) => {
   const file = dialog.showOpenDialog({ properties: ['openFile'] });
-  console.log(file);
-  event.sender.send('fileLoaded');
+  event.sender.send('fileLoaded', file);
 });

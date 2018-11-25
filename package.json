@@ -1,5 +1,5 @@
 {
-  "name": "FileUploader",
+  "name": "file-uploader",
   "version": "1.0.0",
   "description": "PDF Uploader",
   "main": "main.js",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "electron": "^3.0.10"
   }
 }
