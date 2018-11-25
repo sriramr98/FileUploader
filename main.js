@@ -30,6 +30,11 @@ app.on('activate', () => {
 
 // dialog is created here
 ipcMain.on('getFile', (event) => {
-  const file = dialog.showOpenDialog({ properties: ['openFile'] });
+  const file = dialog.showOpenDialog({
+    properties: ['openFile'],
+    filters: [
+      { name: 'PDF', extensions: ['pdf'] },
+    ],
+  });
   event.sender.send('fileLoaded', file);
 });
